@@ -1,0 +1,12 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    title Notes
+  body
+    div
+      form(action='/notes' method='POST')
+        textarea#note(name='Note')
+        p
+          input(type='submit' value='Save')
